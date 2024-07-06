@@ -6,6 +6,7 @@
 
 #include "trie.hpp"
 #include "unscrambler.hpp"
+#include "utils.hpp"
 
 void handler(int s) {
     std::cout << "\n\nExiting..." << std::endl;
@@ -26,9 +27,7 @@ int main(int argc, char** argv) {
         std::cin >> input;
 
         auto res = unscrambler.unscramble(input);
-        for (auto word : res) {
-            std::cout << word << std::endl;
-        }
+        printing::sorted_print(res);
 
         if (res.empty()) {
             std::cout << "No results." << std::endl;
