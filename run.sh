@@ -1,2 +1,2 @@
-cmake build
-$PWD/build/word-unscrambler
+cp ./dict ./build
+./build/word-unscrambler
