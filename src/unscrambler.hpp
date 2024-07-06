@@ -5,6 +5,7 @@
 #include <fstream>
 #include <memory>
 #include <algorithm>
+#include <iostream>
 
 #include "trie.hpp"
 
