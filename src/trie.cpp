@@ -40,3 +40,7 @@ bool Trie::search(const std::string& word) const {
     }
     return current->is_word;
 }
+
+std::shared_ptr<TrieNode> Trie::get_root() {
+    return root;
+}

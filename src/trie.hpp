@@ -21,6 +21,8 @@ public:
     void insert(const std::string& word);
     bool search(const std::string& word) const;
 
+    std::shared_ptr<TrieNode> get_root();
+
 private:
     std::shared_ptr<TrieNode> root;
 };

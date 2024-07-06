@@ -13,4 +13,5 @@ add_executable(
     src/trie.hpp
     src/unscrambler.cpp
     src/unscrambler.hpp
+    src/utils.hpp
 )
