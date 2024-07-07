@@ -7,8 +7,17 @@ The dictionary is stored in a Trie and words are 'unscrambled' using a pruning t
 - Only supports ASCII A-Z (other language support is out of the scope of this project)
 
 ## Requirements
-- CMake
+- Meson
 - A C++ compiler that supports C++20
+
+## Installation
+For Linux:
+```bash
+$ meson setup builddir && cd builddir
+$ meson compile
+$ cp ../dict .
+$ ./word-unscrambler
+```
 
 ## Todo
 - [x] Trie dictionary

@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     std::string input;
 
     while (true) {
-        std::cout << "Type some scrambled text ('?' for a wildcard, max 3) [ctrl+C to exit]: ";
+        std::cout << "Type some scrambled text ('?' for a wildcard, max 2) [ctrl+C to exit]: ";
         std::cin >> input;
 
         auto res = unscrambler.unscramble(input);

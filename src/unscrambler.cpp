@@ -12,7 +12,7 @@ std::set<std::string> Unscrambler::unscramble(std::string& letters) {
     matches.clear();
     
     auto wildcard_count = std::ranges::count(letters, '?');
-    if (wildcard_count > 3) {
+    if (wildcard_count > 2) {
         std::cout << "You included too many wildcards" << std::endl;
         return matches;
     }
