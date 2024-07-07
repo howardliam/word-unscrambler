@@ -8,7 +8,7 @@ The dictionary is stored in a Trie and words are 'unscrambled' using a pruning t
 
 ## Requirements
 - CMake
-- A C++ compiler
+- A C++ compiler that supports C++20
 
 ## Todo
 - [x] Trie dictionary
