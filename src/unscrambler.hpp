@@ -7,9 +7,9 @@
 #include <algorithm>
 #include <iostream>
 #include <set>
+#include <ranges>
 
 #include "utils.hpp"
-
 #include "trie.hpp"
 
 class Unscrambler {

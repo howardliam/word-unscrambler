@@ -31,10 +31,17 @@ void printing::sorted_print(std::set<std::string> words) {
 
     for (int length : word_lengths) {
         auto words = sorted_words[length];
+        int count = 0;
+        int width = MAX_WIDTH/length;
         for (auto word : words) {
+            if (count > width) {
+                std::cout << std::endl;
+                count = 0;
+            }
             std::cout << word << " ";
+            count++;
         }
-        std::cout << std::endl;
+        std::cout << std::endl << std::endl;
     }
     std::cout << std::endl;
 }

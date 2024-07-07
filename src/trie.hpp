@@ -4,6 +4,8 @@
 #include <vector>
 #include <memory>
 
+const std::string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 struct TrieNode {
     char value;
     bool is_word;

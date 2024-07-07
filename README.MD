@@ -4,6 +4,7 @@ The dictionary is stored in a Trie and words are 'unscrambled' using a pruning t
 
 ## Limitations
 - Dictionaries must be all uppercase and line delimited
+- Only supports ASCII A-Z (other language support is out of the scope of this project)
 
 ## Requirements
 - CMake
