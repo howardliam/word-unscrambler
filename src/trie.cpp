@@ -20,7 +20,13 @@ Trie::~Trie() = default;
 void Trie::insert(const std::string& word) {
     std::shared_ptr<TrieNode> current = root;
     for (char ch : word) {
-        int index = ch - 'A';
+        auto pos = ALPHABET.find(ch);
+        if (pos == std::string::npos) {
+            std::cerr << "Failed to insert: " + word << std::endl;
+            exit(1);
+        }
+        int index = pos;
+
         if (!current->children[index]) {
             current->children[index] = std::make_shared<TrieNode>(ch);
         }
@@ -32,7 +38,13 @@ void Trie::insert(const std::string& word) {
 bool Trie::search(const std::string& word) const {
     std::shared_ptr<TrieNode> current = root;
     for (char ch : word) {
-        int index = ch - 'A';
+        auto pos = ALPHABET.find(ch);
+        if (pos == std::string::npos) {
+            std::cerr << "Failed to search: " + word << std::endl;
+            exit(1);
+        }
+        int index = pos;
+
         if (!current->children[index]) {
             return false;
         }

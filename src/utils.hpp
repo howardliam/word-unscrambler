@@ -12,6 +12,11 @@ inline std::string to_upper(std::string input) {
     return input;
 }
 
+inline std::string to_lower(std::string input) {
+    std::transform(input.begin(), input.end(), input.begin(), ::tolower);
+    return input;
+}
+
 namespace printing {
     constexpr int MAX_WIDTH = 50;
 

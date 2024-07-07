@@ -3,7 +3,7 @@ This program finds all possible word matches in an (scrambled) input string.
 The dictionary is stored in a Trie and words are 'unscrambled' using a pruning tree search.
 
 ## Limitations
-- Dictionaries must be all uppercase and line delimited
+- Dictionaries must be line delimited
 - Only supports ASCII A-Z (other language support is out of the scope of this project)
 
 ## Requirements
@@ -13,4 +13,4 @@ The dictionary is stored in a Trie and words are 'unscrambled' using a pruning t
 ## Todo
 - [x] Trie dictionary
 - [x] Unscrambler
-- [ ] No uppercase requirement for Trie
+- [x] No uppercase requirement for Trie

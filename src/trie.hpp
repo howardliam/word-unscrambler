@@ -2,9 +2,11 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 #include <memory>
 
-const std::string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// const std::string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const std::string ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
 struct TrieNode {
     char value;

@@ -17,7 +17,7 @@ std::set<std::string> Unscrambler::unscramble(std::string& letters) {
         return matches;
     }
 
-    recursive_unscramble(dictionary.get_root(), "", to_upper(letters));
+    recursive_unscramble(dictionary.get_root(), "", to_lower(letters));
 
     return matches;
 }
@@ -36,7 +36,7 @@ void Unscrambler::load_dictionary(const std::string& path) {
 
     std::string line;
     while (getline(dict, line)) {
-        dictionary.insert(line);
+        dictionary.insert(to_lower(line));
     }
 }
 
